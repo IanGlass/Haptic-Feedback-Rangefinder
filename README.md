@@ -6,15 +6,15 @@ The purpose of this project was to design a hand held rangefinder which uses vib
 
 The Li-ion battery is V regulated to a nominal 3.5 V, providing power to the microcontroller. Battery charge is controlled with the MCP73831, which is powered through a 5 V USB source. MOSFETs are not required for normal operation but allows the micro to power up and indicate 'charging' with a few short vibration bursts from the motor. The device has a 50 mA average measured current usage. 
 
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Power_Schematic.jpg" width="520">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Power_Schematic.jpg" width="700">
 
 The MCP1640 boost converter is required and adjusted to boost the 3.5 V regulated power source to 5 V, the operating voltage of the SR04 sensor. 
 
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Boost_Converter_Schematic.jpg" width="520">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Boost_Converter_Schematic.jpg" width="700">
 
 The EFM32TG is programmed and debugged through the Serial Wire Debug header and can be powered through USB. The SR04 sensor is connected through two GPIO ports. An op amp is included to boost the micro current drive and smooths out PWM to an analogue voltage.
 
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Rangefinder_Schematic.jpg" width="520">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Rangefinder_Schematic.jpg" width="700">
 
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit_Schematics/Rangefinder_PCB.JPG" width="420">
 
