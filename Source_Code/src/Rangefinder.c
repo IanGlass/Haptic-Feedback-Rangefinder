@@ -1,7 +1,7 @@
 /**************************************************************************//**
  * @file
- * @brief Empty Project
- * @author Energy Micro AS
+ * @brief Rangefinder main module
+ * @author Ian Glass
  * @version 3.20.2
  ******************************************************************************
  * @section License
@@ -15,37 +15,6 @@
  *
  ******************************************************************************/
 
-#ifndef TRIG_PIN
-#define TRIG_PIN     3
-#endif
-#ifndef TRIG_PORT
-#define TRIG_PORT    gpioPortB
-#endif
-#ifndef ECHO_PIN
-#define ECHO_PIN     4
-#endif
-#ifndef ECHO_PORT
-#define ECHO_PORT    gpioPortB
-#endif
-#ifndef PWM_PIN
-#define PWM_PIN     4
-#endif
-#ifndef PWM_PORT
-#define PWM_PORT    gpioPortF
-#endif
-#ifndef BUTTON_PIN
-#define BUTTON_PIN     13
-#endif
-#ifndef BUTTON_PORT
-#define BUTTON_PORT    gpioPortC
-#endif
-#ifndef CHARGE_PIN
-#define CHARGE_PIN     0
-#endif
-#ifndef CHARGE_PORT
-#define CHARGE_PORT    gpioPortA
-#endif
-
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
@@ -58,21 +27,8 @@
 #include "em_timer.h"
 #include "em_prs.h"
 #include "em_msc.h"
+#include "Rangefinder.h"
 //
-//
-//
-//
-
-//Optimal without signal cross-over
-#define TRIGGER_CALL_FREQ 25
-//Set to 40us high time
-#define TRIGGER_HIGH_FREQ 25000
-//PWM CALL frequency (100 times PWM frequency). Should be no greater than time to acquire 5 samples
-#define PWM_FREQ 100000 //25000
-//Systick call frequency
-#define SYS_FREQ 10000
-//Frequency for range indicator (set to 2 Hz atm)
-#define RANGE_FREQ 200
 
 volatile uint32_t Time;
 volatile uint32_t PWMTime;
@@ -83,7 +39,7 @@ volatile uint32_t Charging = 0;
 int Distance[5];
 int SampleCount = 0;
 int PWM = 0;
-//Range in cm, init
+//Range in cm, initialised to 100 cm
 uint32_t Range = 100;
 int Prev_State = 0;
 int Indicator_Counter = 0;
@@ -95,14 +51,18 @@ uint32_t clock;
 
 /**************************************************************************//**
  * @brief SysTick_Handler
- * Interrupt Service Routine for system tick counter, 10us calls
+ * Interrupt Service Routine for system tick counter, 10us calls, increments
+ * a globally accessible Time variable
  *****************************************************************************/
 void SysTick_Handler(void)
 {
     Time++;
 }
 
-//PWM output ISR and debounce and range switch vibration control
+/**************************************************************************//**
+ * @brief TIMER0_IRQHandler
+ * PWM output to drive motor and button debounce
+ *****************************************************************************/
 void TIMER0_IRQHandler(void) {
 	TIMER_IntClear(TIMER0, TIMER_IF_OF);
 	PWMTime++;
@@ -150,7 +110,10 @@ void TIMER0_IRQHandler(void) {
 	}
 }
 
-//Trigger signal out
+/**************************************************************************//**
+ * @brief TIMER1_IRQHandler
+ * Sends trigger signal to HC-SR04 at 25 Hz
+ *****************************************************************************/
 void TIMER1_IRQHandler(void) {
 	//Reset overflow flag
 	TIMER_IntClear(TIMER1, TIMER_IF_OF);
@@ -168,6 +131,10 @@ void TIMER1_IRQHandler(void) {
 	}
 }
 
+/**************************************************************************//**
+ * @brief GPIO_EVEN_IRQHandler
+ * Captures 'time-of-flight', charge detection
+ *****************************************************************************/
 void GPIO_EVEN_IRQHandler(void) {
 	if (GPIO_PinInGet(CHARGE_PORT, CHARGE_PIN) == 1) {
 		Charging = 1;
@@ -200,6 +167,10 @@ void GPIO_EVEN_IRQHandler(void) {
 	GPIO_IntClear(1 << CHARGE_PIN);
 }
 
+/**************************************************************************//**
+ * @brief GPIO_ODD_IRQHandler
+ * Switches between 100, 200 and 400 cm, 
+ *****************************************************************************/
 void GPIO_ODD_IRQHandler(void) {
 	//Button
 	if ((GPIO_PinInGet(BUTTON_PORT, BUTTON_PIN) == 1) && Button_Enable && !Prev_State && !Charging){
