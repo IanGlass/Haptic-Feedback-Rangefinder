@@ -1,6 +1,6 @@
 # Haptic-Feedback-Rangefinder
 
-The range can be cycled between 100, 200 and 400 cm using the push button.
+The purpose of this project was to design a hand held rangefinder which uses vibration intensity (haptic feedback) to indicate distance. The sensing range can be cycled between 100, 200 and 400 cm using the push button. The project uses the SR04 ultrasonic sensor and the EFM32TG microcontroller produced by SiliconLabs.
 
 # Circuit
 
