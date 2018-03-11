@@ -1,4 +1,0 @@
-Added Component: Designator=SW(EG1270)
-Added Pin To Net: NetName=4V2 Pin=SW-1
-Added Pin To Net: NetName=NetC13_2 Pin=SW-2
-Added Member To Class: ClassName=NaviGo v3.0 Member=Component SW EG1270
