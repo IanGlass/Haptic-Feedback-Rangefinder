@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=MOTOR Pin=M1-41
+Added Pin To Net: NetName=NetM1_34 Pin=M1-34
+Added Pin To Net: NetName=NetM1_34 Pin=SW2-1
+Added Net: Name=NetM1_34

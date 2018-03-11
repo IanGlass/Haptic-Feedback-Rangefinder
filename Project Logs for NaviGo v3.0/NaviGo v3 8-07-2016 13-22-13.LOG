@@ -1,0 +1,90 @@
+Removed Pin From Net: NetName=STAT Pin=M1-1
+Removed Pin From Net: NetName=3V5 Pin=M1-4
+Removed Pin From Net: NetName=GND Pin=M1-5
+Removed Pin From Net: NetName=TRIG Pin=M1-6
+Removed Pin From Net: NetName=ECHO Pin=M1-7
+Removed Pin From Net: NetName=NetC5_1 Pin=M1-11
+Removed Pin From Net: NetName=NetC6_1 Pin=M1-12
+Removed Pin From Net: NetName=RESETN Pin=M1-16
+Removed Pin From Net: NetName=GND Pin=M1-18
+Removed Pin From Net: NetName=3V5 Pin=M1-19
+Removed Pin From Net: NetName=3V5 Pin=M1-22
+Removed Pin From Net: NetName=3V5 Pin=M1-23
+Removed Pin From Net: NetName=3V5 Pin=M1-28
+Removed Pin From Net: NetName=NetC4_1 Pin=M1-29
+Removed Pin From Net: NetName=NetM1_34 Pin=M1-34
+Removed Pin From Net: NetName=SWCLK Pin=M1-37
+Removed Pin From Net: NetName=SWDIO Pin=M1-38
+Removed Pin From Net: NetName=SWO Pin=M1-39
+Removed Pin From Net: NetName=MOTOR Pin=M1-41
+Removed Pin From Net: NetName=3V5 Pin=M1-43
+Change Component DesignItemId : Designator=M1 Old DesignItemId=EFM32TG822 New DesignItemId=CSD23382F4T
+Change Component Footprint: Designator=M1 Old Footprint=EFM32TG822 New Footprint=CSD23382F4T
+Change Component Comment : Designator=R12 Old Comment=1M New Comment=18.7k
+Change Component Comment : Designator=M1 Old Comment=EFM32TG822 New Comment=CSD23382F4T
+Added Component: Designator=M2(CSD23382F4T)
+Added Component: Designator=U1(EFM32TG822)
+Added Pin To Net: NetName=NetC13_2 Pin=M1-1
+Added Pin To Net: NetName=STAT Pin=M1-2
+Added Pin To Net: NetName=4V2 Pin=M1-3
+Added Pin To Net: NetName=STAT Pin=M2-2
+Added Pin To Net: NetName=3V5 Pin=M2-3
+Added Pin To Net: NetName=3V5 Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=TRIG Pin=U1-6
+Added Pin To Net: NetName=ECHO Pin=U1-7
+Added Pin To Net: NetName=NetC5_1 Pin=U1-11
+Added Pin To Net: NetName=NetC6_1 Pin=U1-12
+Added Pin To Net: NetName=RESETN Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=3V5 Pin=U1-19
+Added Pin To Net: NetName=3V5 Pin=U1-22
+Added Pin To Net: NetName=3V5 Pin=U1-23
+Added Pin To Net: NetName=3V5 Pin=U1-28
+Added Pin To Net: NetName=NetC4_1 Pin=U1-29
+Added Pin To Net: NetName=NetM1_34 Pin=U1-34
+Added Pin To Net: NetName=SWCLK Pin=U1-37
+Added Pin To Net: NetName=SWDIO Pin=U1-38
+Added Pin To Net: NetName=SWO Pin=U1-39
+Added Pin To Net: NetName=MOTOR Pin=U1-41
+Added Pin To Net: NetName=3V5 Pin=U1-43
+Change Net Name : Old Net Name=NetM1_34 New Net Name=NetSW2_1
+Added Pin To Net: NetName=CHARGE Pin=M2-1
+Added Pin To Net: NetName=CHARGE Pin=U1-1
+Added Net: Name=CHARGE
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component BC MCP73831T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component BT1 Battery
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C1 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C2 10u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C4 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C5 12p
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C6 12p
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C7 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C8 100n
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C10 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C11 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C12 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C13 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component DBG 20021111-00010T4LF
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component L1 LBR2012T4R7M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component M1 CSD23382F4T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component M2 CSD23382F4T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component MOTOR Motor
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component OP LMV321SQ3T2G
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component OSC ST3215SB32768H5HSZA1
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R1 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R2 324k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R5 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R6 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R8 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R9 536k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R10 3k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R11 150R
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R12 18.7k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SENSOR Header 4
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SW2 2-1825027-0
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SW EG1247
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component U1 EFM32TG822
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component USB 649-10118192-0001LF
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component Vboost MCP1640T-I/MC
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component VReg TPS78001DDCR

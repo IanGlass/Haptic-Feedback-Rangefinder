@@ -1,0 +1,19 @@
+Added Component: Designator=M1(EFM32TG822)
+Added Pin To Net: NetName=3V5 Pin=M1-4
+Added Pin To Net: NetName=GND Pin=M1-5
+Added Pin To Net: NetName=NetC5_1 Pin=M1-11
+Added Pin To Net: NetName=NetC6_1 Pin=M1-12
+Added Pin To Net: NetName=RESETN Pin=M1-16
+Added Pin To Net: NetName=GND Pin=M1-18
+Added Pin To Net: NetName=3V5 Pin=M1-19
+Added Pin To Net: NetName=3V5 Pin=M1-22
+Added Pin To Net: NetName=3V5 Pin=M1-23
+Added Pin To Net: NetName=3V5 Pin=M1-28
+Added Pin To Net: NetName=NetC4_1 Pin=M1-29
+Added Pin To Net: NetName=SWCLK Pin=M1-37
+Added Pin To Net: NetName=SWDIO Pin=M1-38
+Added Pin To Net: NetName=SWO Pin=M1-39
+Added Pin To Net: NetName=3V5 Pin=M1-43
+Change Class Name : Old Net Name=NaviGo v1.2 New Net Name=NaviGo v3.0
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component M1 EFM32TG822
+Added Room: Name=NaviGo v3.0

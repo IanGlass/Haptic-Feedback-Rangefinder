@@ -1,0 +1,308 @@
+Removed Pin From Net: NetName=STAT Pin=BC_1-1
+Removed Pin From Net: NetName=GND Pin=BC_1-2
+Removed Pin From Net: NetName=4V2 Pin=BC_1-3
+Removed Pin From Net: NetName=VUSB Pin=BC_1-4
+Removed Pin From Net: NetName=NetBC_5 Pin=BC_1-5
+Removed Pin From Net: NetName=4V2 Pin=BT1_1-1
+Removed Pin From Net: NetName=GND Pin=BT1_1-2
+Removed Pin From Net: NetName=3V5 Pin=C1_1-1
+Removed Pin From Net: NetName=GND Pin=C1_1-2
+Removed Pin From Net: NetName=5V Pin=C2_1-1
+Removed Pin From Net: NetName=GND Pin=C2_1-2
+Removed Pin From Net: NetName=NetC4_1 Pin=C4_1-1
+Removed Pin From Net: NetName=GND Pin=C4_1-2
+Removed Pin From Net: NetName=XTAL_P Pin=C5_1-1
+Removed Pin From Net: NetName=GND Pin=C5_1-2
+Removed Pin From Net: NetName=XTAL_N Pin=C6_1-1
+Removed Pin From Net: NetName=GND Pin=C6_1-2
+Removed Pin From Net: NetName=3V5 Pin=C7_1-1
+Removed Pin From Net: NetName=GND Pin=C7_1-2
+Removed Pin From Net: NetName=3V5 Pin=C8_1-1
+Removed Pin From Net: NetName=GND Pin=C8_1-2
+Removed Pin From Net: NetName=4V2 Pin=C10_1-1
+Removed Pin From Net: NetName=GND Pin=C10_1-2
+Removed Pin From Net: NetName=VUSB Pin=C11_1-1
+Removed Pin From Net: NetName=GND Pin=C11_1-2
+Removed Pin From Net: NetName=GND Pin=C12_1-1
+Removed Pin From Net: NetName=3V5 Pin=C12_1-2
+Removed Pin From Net: NetName=GND Pin=C13_1-1
+Removed Pin From Net: NetName=NetC13_2 Pin=C13_1-2
+Removed Pin From Net: NetName=RESETN Pin=DBG_1-1
+Removed Pin From Net: NetName=SWO Pin=DBG_1-3
+Removed Pin From Net: NetName=SWCLK Pin=DBG_1-4
+Removed Pin From Net: NetName=SWDIO Pin=DBG_1-5
+Removed Pin From Net: NetName=GND Pin=DBG_1-6
+Removed Pin From Net: NetName=GND Pin=DBG_1-8
+Removed Pin From Net: NetName=GND Pin=DBG_1-9
+Removed Pin From Net: NetName=3V5 Pin=DBG_1-10
+Removed Pin From Net: NetName=3V5 Pin=L1_1-1
+Removed Pin From Net: NetName=NetL1_2 Pin=L1_1-2
+Removed Pin From Net: NetName=CHARGE Pin=M1_1-1
+Removed Pin From Net: NetName=3V5 Pin=M1_1-4
+Removed Pin From Net: NetName=GND Pin=M1_1-5
+Removed Pin From Net: NetName=TRIG Pin=M1_1-6
+Removed Pin From Net: NetName=ECHO Pin=M1_1-7
+Removed Pin From Net: NetName=RESETN Pin=M1_1-16
+Removed Pin From Net: NetName=GND Pin=M1_1-18
+Removed Pin From Net: NetName=3V5 Pin=M1_1-19
+Removed Pin From Net: NetName=XTAL_N Pin=M1_1-20
+Removed Pin From Net: NetName=XTAL_P Pin=M1_1-21
+Removed Pin From Net: NetName=3V5 Pin=M1_1-22
+Removed Pin From Net: NetName=3V5 Pin=M1_1-23
+Removed Pin From Net: NetName=3V5 Pin=M1_1-28
+Removed Pin From Net: NetName=NetC4_1 Pin=M1_1-29
+Removed Pin From Net: NetName=NetM1_34 Pin=M1_1-34
+Removed Pin From Net: NetName=SWCLK Pin=M1_1-37
+Removed Pin From Net: NetName=SWDIO Pin=M1_1-38
+Removed Pin From Net: NetName=SWO Pin=M1_1-39
+Removed Pin From Net: NetName=MOTOR Pin=M1_1-41
+Removed Pin From Net: NetName=3V5 Pin=M1_1-43
+Removed Pin From Net: NetName=GND Pin=M1_1-44
+Removed Pin From Net: NetName=NetMOTOR_1 Pin=MOTOR_1-1
+Removed Pin From Net: NetName=GND Pin=MOTOR_1-2
+Removed Pin From Net: NetName=MOTOR Pin=OP_1-1
+Removed Pin From Net: NetName=GND Pin=OP_1-2
+Removed Pin From Net: NetName=NetOP_3 Pin=OP_1-3
+Removed Pin From Net: NetName=NetMOTOR_1 Pin=OP_1-4
+Removed Pin From Net: NetName=3V5 Pin=OP_1-5
+Removed Pin From Net: NetName=XTAL_P Pin=OSC_1-1
+Removed Pin From Net: NetName=XTAL_N Pin=OSC_1-2
+Removed Pin From Net: NetName=5V Pin=R1_1-1
+Removed Pin From Net: NetName=NetR1_2 Pin=R1_1-2
+Removed Pin From Net: NetName=NetR1_2 Pin=R2_1-1
+Removed Pin From Net: NetName=GND Pin=R2_1-2
+Removed Pin From Net: NetName=NetOP_3 Pin=R5_1-1
+Removed Pin From Net: NetName=GND Pin=R5_1-2
+Removed Pin From Net: NetName=3V5 Pin=R6_1-1
+Removed Pin From Net: NetName=NetOP_3 Pin=R6_1-2
+Removed Pin From Net: NetName=NetR8_1 Pin=R8_1-1
+Removed Pin From Net: NetName=3V5 Pin=R8_1-2
+Removed Pin From Net: NetName=GND Pin=R9_1-1
+Removed Pin From Net: NetName=NetR8_1 Pin=R9_1-2
+Removed Pin From Net: NetName=NetBC_5 Pin=R10_1-1
+Removed Pin From Net: NetName=GND Pin=R10_1-2
+Removed Pin From Net: NetName=NetR11_1 Pin=R11_1-1
+Removed Pin From Net: NetName=NetR11_2 Pin=R11_1-2
+Removed Pin From Net: NetName=STAT Pin=R12_1-1
+Removed Pin From Net: NetName=4V2 Pin=R12_1-2
+Removed Pin From Net: NetName=5V Pin=SENSOR_1-1
+Removed Pin From Net: NetName=TRIG Pin=SENSOR_1-2
+Removed Pin From Net: NetName=ECHO Pin=SENSOR_1-3
+Removed Pin From Net: NetName=GND Pin=SENSOR_1-4
+Removed Pin From Net: NetName=NetM1_34 Pin=SW2_1-1
+Removed Pin From Net: NetName=3V5 Pin=SW2_1-2
+Removed Pin From Net: NetName=4V2 Pin=SW_1-1
+Removed Pin From Net: NetName=NetC13_2 Pin=SW_1-2
+Removed Pin From Net: NetName=NetC13_2 Pin=U1_1-1
+Removed Pin From Net: NetName=STAT Pin=U1_1-2
+Removed Pin From Net: NetName=4V2 Pin=U1_1-3
+Removed Pin From Net: NetName=CHARGE Pin=U2_1-1
+Removed Pin From Net: NetName=STAT Pin=U2_1-2
+Removed Pin From Net: NetName=3V5 Pin=U2_1-3
+Removed Pin From Net: NetName=VUSB Pin=USB_1-1
+Removed Pin From Net: NetName=NetR11_1 Pin=USB_1-2
+Removed Pin From Net: NetName=NetR11_2 Pin=USB_1-3
+Removed Pin From Net: NetName=GND Pin=USB_1-5
+Removed Pin From Net: NetName=NetR1_2 Pin=Vboost_1-1
+Removed Pin From Net: NetName=GND Pin=Vboost_1-2
+Removed Pin From Net: NetName=GND Pin=Vboost_1-3
+Removed Pin From Net: NetName=3V5 Pin=Vboost_1-4
+Removed Pin From Net: NetName=NetL1_2 Pin=Vboost_1-5
+Removed Pin From Net: NetName=5V Pin=Vboost_1-6
+Removed Pin From Net: NetName=5V Pin=Vboost_1-7
+Removed Pin From Net: NetName=3V5 Pin=Vboost_1-8
+Removed Pin From Net: NetName=NetC13_2 Pin=VReg_1-1
+Removed Pin From Net: NetName=GND Pin=VReg_1-2
+Removed Pin From Net: NetName=NetC13_2 Pin=VReg_1-3
+Removed Pin From Net: NetName=NetR8_1 Pin=VReg_1-4
+Removed Pin From Net: NetName=3V5 Pin=VReg_1-5
+Added Component: Designator=BC(MCP73831T)
+Added Component: Designator=BT1(BAT-2)
+Added Component: Designator=C1(Capacitor 0805)
+Added Component: Designator=C2(Capacitor 0805)
+Added Component: Designator=C4(Capacitor 0402)
+Added Component: Designator=C5(Capacitor 0402)
+Added Component: Designator=C6(Capacitor 0402)
+Added Component: Designator=C7(Capacitor 0805)
+Added Component: Designator=C8(Capacitor 0402)
+Added Component: Designator=C10(Capacitor 0805)
+Added Component: Designator=C11(Capacitor 0805)
+Added Component: Designator=C12(Capacitor 0402)
+Added Component: Designator=C13(Capacitor 0402)
+Added Component: Designator=DBG(20021111-00010T4LF)
+Added Component: Designator=L1(LBR2012T4R7M)
+Added Component: Designator=M1(EFM32TG822)
+Added Component: Designator=MOTOR(Motor)
+Added Component: Designator=OP(LMV321SQ3T2G)
+Added Component: Designator=OSC(ST3215SB32768H5HSZA1)
+Added Component: Designator=R1(Resistor 0403)
+Added Component: Designator=R2(Resistor 0603)
+Added Component: Designator=R5(Resistor 0403)
+Added Component: Designator=R6(Resistor 0403)
+Added Component: Designator=R8(Resistor 0403)
+Added Component: Designator=R9(Resistor 0603)
+Added Component: Designator=R10(Resistor 0603)
+Added Component: Designator=R11(Resistor 0603)
+Added Component: Designator=R12(Resistor 0403)
+Added Component: Designator=SENSOR(HDR1X4)
+Added Component: Designator=SW2(2-1825027-0)
+Added Component: Designator=SW(EG1247)
+Added Component: Designator=U1(CSD23382F4T)
+Added Component: Designator=U2(CSD23382F4T)
+Added Component: Designator=USB(649-10118192-0001LF)
+Added Component: Designator=Vboost(MCP1640T-I/MC)
+Added Component: Designator=VReg(TPS78001DDCR)
+Added Pin To Net: NetName=STAT Pin=BC-1
+Added Pin To Net: NetName=GND Pin=BC-2
+Added Pin To Net: NetName=4V2 Pin=BC-3
+Added Pin To Net: NetName=VUSB Pin=BC-4
+Added Pin To Net: NetName=NetBC_5 Pin=BC-5
+Added Pin To Net: NetName=4V2 Pin=BT1-1
+Added Pin To Net: NetName=GND Pin=BT1-2
+Added Pin To Net: NetName=3V5 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=5V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=XTAL_P Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=XTAL_N Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=3V5 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=3V5 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=4V2 Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=VUSB Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=3V5 Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=RESETN Pin=DBG-1
+Added Pin To Net: NetName=SWO Pin=DBG-3
+Added Pin To Net: NetName=SWCLK Pin=DBG-4
+Added Pin To Net: NetName=SWDIO Pin=DBG-5
+Added Pin To Net: NetName=GND Pin=DBG-6
+Added Pin To Net: NetName=GND Pin=DBG-8
+Added Pin To Net: NetName=GND Pin=DBG-9
+Added Pin To Net: NetName=3V5 Pin=DBG-10
+Added Pin To Net: NetName=3V5 Pin=L1-1
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=CHARGE Pin=M1-1
+Added Pin To Net: NetName=3V5 Pin=M1-4
+Added Pin To Net: NetName=GND Pin=M1-5
+Added Pin To Net: NetName=TRIG Pin=M1-6
+Added Pin To Net: NetName=ECHO Pin=M1-7
+Added Pin To Net: NetName=RESETN Pin=M1-16
+Added Pin To Net: NetName=GND Pin=M1-18
+Added Pin To Net: NetName=3V5 Pin=M1-19
+Added Pin To Net: NetName=XTAL_N Pin=M1-20
+Added Pin To Net: NetName=XTAL_P Pin=M1-21
+Added Pin To Net: NetName=3V5 Pin=M1-22
+Added Pin To Net: NetName=3V5 Pin=M1-23
+Added Pin To Net: NetName=3V5 Pin=M1-28
+Added Pin To Net: NetName=NetC4_1 Pin=M1-29
+Added Pin To Net: NetName=NetM1_34 Pin=M1-34
+Added Pin To Net: NetName=SWCLK Pin=M1-37
+Added Pin To Net: NetName=SWDIO Pin=M1-38
+Added Pin To Net: NetName=SWO Pin=M1-39
+Added Pin To Net: NetName=MOTOR Pin=M1-41
+Added Pin To Net: NetName=3V5 Pin=M1-43
+Added Pin To Net: NetName=GND Pin=M1-44
+Added Pin To Net: NetName=NetMOTOR_1 Pin=MOTOR-1
+Added Pin To Net: NetName=GND Pin=MOTOR-2
+Added Pin To Net: NetName=MOTOR Pin=OP-1
+Added Pin To Net: NetName=GND Pin=OP-2
+Added Pin To Net: NetName=NetOP_3 Pin=OP-3
+Added Pin To Net: NetName=NetMOTOR_1 Pin=OP-4
+Added Pin To Net: NetName=3V5 Pin=OP-5
+Added Pin To Net: NetName=XTAL_P Pin=OSC-1
+Added Pin To Net: NetName=XTAL_N Pin=OSC-2
+Added Pin To Net: NetName=5V Pin=R1-1
+Added Pin To Net: NetName=NetR1_2 Pin=R1-2
+Added Pin To Net: NetName=NetR1_2 Pin=R2-1
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=NetOP_3 Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=3V5 Pin=R6-1
+Added Pin To Net: NetName=NetOP_3 Pin=R6-2
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=3V5 Pin=R8-2
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=NetR8_1 Pin=R9-2
+Added Pin To Net: NetName=NetBC_5 Pin=R10-1
+Added Pin To Net: NetName=GND Pin=R10-2
+Added Pin To Net: NetName=NetR11_1 Pin=R11-1
+Added Pin To Net: NetName=NetR11_2 Pin=R11-2
+Added Pin To Net: NetName=STAT Pin=R12-1
+Added Pin To Net: NetName=4V2 Pin=R12-2
+Added Pin To Net: NetName=5V Pin=SENSOR-1
+Added Pin To Net: NetName=TRIG Pin=SENSOR-2
+Added Pin To Net: NetName=ECHO Pin=SENSOR-3
+Added Pin To Net: NetName=GND Pin=SENSOR-4
+Added Pin To Net: NetName=NetM1_34 Pin=SW2-1
+Added Pin To Net: NetName=3V5 Pin=SW2-2
+Added Pin To Net: NetName=4V2 Pin=SW-1
+Added Pin To Net: NetName=NetC13_2 Pin=SW-2
+Added Pin To Net: NetName=NetC13_2 Pin=U1-1
+Added Pin To Net: NetName=STAT Pin=U1-2
+Added Pin To Net: NetName=4V2 Pin=U1-3
+Added Pin To Net: NetName=CHARGE Pin=U2-1
+Added Pin To Net: NetName=STAT Pin=U2-2
+Added Pin To Net: NetName=3V5 Pin=U2-3
+Added Pin To Net: NetName=VUSB Pin=USB-1
+Added Pin To Net: NetName=NetR11_1 Pin=USB-2
+Added Pin To Net: NetName=NetR11_2 Pin=USB-3
+Added Pin To Net: NetName=GND Pin=USB-5
+Added Pin To Net: NetName=NetR1_2 Pin=Vboost-1
+Added Pin To Net: NetName=GND Pin=Vboost-2
+Added Pin To Net: NetName=GND Pin=Vboost-3
+Added Pin To Net: NetName=3V5 Pin=Vboost-4
+Added Pin To Net: NetName=NetL1_2 Pin=Vboost-5
+Added Pin To Net: NetName=5V Pin=Vboost-6
+Added Pin To Net: NetName=5V Pin=Vboost-7
+Added Pin To Net: NetName=3V5 Pin=Vboost-8
+Added Pin To Net: NetName=NetC13_2 Pin=VReg-1
+Added Pin To Net: NetName=GND Pin=VReg-2
+Added Pin To Net: NetName=NetC13_2 Pin=VReg-3
+Added Pin To Net: NetName=NetR8_1 Pin=VReg-4
+Added Pin To Net: NetName=3V5 Pin=VReg-5
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component BC MCP73831T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component BT1 Battery
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C1 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C2 10u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C4 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C5 12p
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C6 12p
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C7 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C8 100n
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C10 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C11 4.7u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C12 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component C13 1u
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component DBG 20021111-00010T4LF
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component L1 LBR2012T4R7M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component M1 EFM32TG822
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component MOTOR Motor
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component OP LMV321SQ3T2G
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component OSC ST3215SB32768H5HSZA1
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R1 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R2 324k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R5 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R6 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R8 1M
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R9 536k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R10 3k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R11 150R
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component R12 18.7k
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SENSOR Header 4
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SW2 2-1825027-0
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component SW EG1247
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component U1 CSD23382F4T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component U2 CSD23382F4T
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component USB 649-10118192-0001LF
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component Vboost MCP1640T-I/MC
+Added Member To Class: ClassName=NaviGo v3.0 Member=Component VReg TPS78001DDCR
