@@ -60,8 +60,6 @@
 #include "em_msc.h"
 //
 //
-//****Notes for optimization****
-//Spend time optimizing PWM freq for motor. Use seperate timer if max ticks are high to reduce cpu usage
 //
 //
 
