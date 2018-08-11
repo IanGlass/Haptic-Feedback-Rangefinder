@@ -10,7 +10,7 @@ The Li-ion battery is V regulated to a nominal 3.5 V, providing power to the mic
 
 The MCP1640 boost converter is required and adjusted to boost the 3.5 V regulated power source to 5 V, the operating voltage of the HC-SR04 sensor. 
 
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Boost-Converter_Schematic.jpg" width="700">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Boost-Converter-Schematic.jpg" width="700">
 
 The EFM32TG is programmed and debugged through the Serial Wire Debug header and can be powered through USB. The HC-SR04 sensor is connected through two GPIO ports. An op amp is included to boost the micro current drive and smooths out PWM to an analogue voltage.
 
