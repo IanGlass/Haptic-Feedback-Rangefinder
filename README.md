@@ -6,17 +6,24 @@ The purpose of this project was to design a hand held rangefinder which uses vib
 
 The Li-ion battery is V regulated to a nominal 3.5 V, providing power to the microcontroller. Battery charge is controlled with the MCP73831, which is powered through a 5 V USB source. MOSFETs are not required for normal operation but allows the micro to power up and indicate 'charging' with a few short vibration bursts from the motor. The device has a 50 mA average measured current usage. 
 
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Power-Schematic.jpg" width="700">
+</p>
 
 The MCP1640 boost converter is required and adjusted to boost the 3.5 V regulated power source to 5 V, the operating voltage of the HC-SR04 sensor. 
 
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Boost-Converter-Schematic.jpg" width="700">
+</p>
 
 The EFM32TG is programmed and debugged through the Serial Wire Debug header and can be powered through USB. The HC-SR04 sensor is connected through two GPIO ports. An op amp is included to boost the micro current drive and smooths out PWM to an analogue voltage.
 
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Rangefinder-Schematic.jpg" width="700">
-
+</p>
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Rangefinder-PCB.JPG" width="420">
+</p>
 
 # Code and Sensor
 
@@ -28,11 +35,21 @@ High precision timing is achieved with the SysTick ISR, which provides a foregro
 
 The device consists of a battery, motor, PCB, switch, button, HC-SR04 and two case halves which can be 3D printed from PLA and super glued shut.
 
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Assembly-1.JPG" width="420">
+</p>
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Assembly-2.JPG" width="420">
+</p>
+<p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Assembly-3.JPG" width="420">
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Bottom.JPG" width="420">
-<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Top.JPG" width="420">
+</p>
+<p align="center">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Bottom.JPG" width="700">
+</p>
+<p align="center">
+<img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Top.JPG" width="700">
+</p>
 
 
 
