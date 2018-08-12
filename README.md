@@ -82,7 +82,8 @@ void GPIO_EVEN_IRQHandler(void) {
 	}
 	GPIO_IntClear(1 << ECHO_PIN);
 	GPIO_IntClear(1 << CHARGE_PIN);
-}```
+}
+```
 
 This IRQ has three functions: drive the PWM output to the op amp and motor, perform counting to debounce the button used for range switching and perform haptic feedback on a charge event. Motor PWM is achieved by using a counter which is incremented on each call of the IRQ. Button debounce is achieved in a similar manner. 
 ```c
@@ -171,7 +172,7 @@ void GPIO_ODD_IRQHandler(void) {
 
 # Case
 
-The device consists of a Li battery, motor, PCB, switch, button, HC-SR04 and two case halves which can be 3D printed from PLA and super glued together.
+The device consists of a (top to bottom) a top case piece, the HC-SR04 sensor, the populated PCB, a Li battery, the motor and the bottom piece. The case is 3D printed from PLA and can be super glued together.
 
 <p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Case/Assembly-2.JPG" width="420">
