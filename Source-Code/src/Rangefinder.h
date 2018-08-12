@@ -4,7 +4,7 @@
 * @author Ian Glass
 * @version 3.20.2
 * @date    28-July-2018
-* @brief   Main module for the 
+* @brief   Include module for Rangefinder.c
 *******************************************************************************
 *
 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"

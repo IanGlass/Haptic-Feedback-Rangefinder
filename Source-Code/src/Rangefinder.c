@@ -4,7 +4,7 @@
 * @author Ian Glass
 * @version 3.20.2
 * @date    28-July-2018
-* @brief   Main module for the 
+* @brief   Main module for the Rangefinder
 *******************************************************************************
 *
 * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
@@ -172,7 +172,7 @@ void GPIO_EVEN_IRQHandler(void) {
 			PWM = 0;
 		}
 	}
-	
+
 	/* Detect of charging from USB */
 	if (GPIO_PinInGet(CHARGE_PORT, CHARGE_PIN) == 1) {
 		Charging = 1;

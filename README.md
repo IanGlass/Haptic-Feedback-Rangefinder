@@ -16,7 +16,7 @@ The MCP1640 boost converter is required and adjusted to boost the 3.5 V regulate
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Boost-Converter-Schematic.jpg" width="700">
 </p>
 
-The EFM32TG is programmed and debugged through the Serial Wire Debug header and can be powered through USB. The HC-SR04 sensor is connected to the EFM32TG through two GPIO ports (Echo and Trig). These two pins are used to trigger range acquisition and to echo the result. An LMV321 operational amplifier is used in non-inverting mode to boost the microcontroller drive current to the motor and to smooth out the PWM signal to an analogue voltage. The voltage divider between PD6 and PD5 allows the micro to periodically check 
+The EFM32TG is programmed and debugged through the Serial Wire Debug header and can be powered through USB. The HC-SR04 sensor is connected to the EFM32TG through two GPIO ports (Echo and Trig). These two pins are used to trigger range acquisition and to echo the result. An LMV321 operational amplifier is used in non-inverting mode to boost the microcontroller drive current to the motor and to smooth out the PWM signal to an analogue voltage. A program header is included to interface to a J-Link LITE CortexM via SWD for flashing and debugging using Simplicity Studio.
 
 <p align="center">
 <img src="https://github.com/IanGlass/Haptic-Feedback-Rangefinder/blob/master/Circuit-Schematics/Rangefinder-Schematic.jpg" width="700">
@@ -30,6 +30,12 @@ The EFM32TG is programmed and debugged through the Serial Wire Debug header and 
 The code runs on event driven foreground tasks only (IRQs) and does not use any background operation. The HC-SR04 has a sensing range of 2 cm to 400 cm and operates by measuring the time of flight of eight 40 kHz sound pulses sent when triggered with a 10 us high digital input signal. Distance is calculated by measuring the high time of an output pin connected to the micro, where the range = high time * 340 (m/s) / 2.
 The following code excerpt runs on the *TIMER1* peripheral to send 10 us long GPIO high signals to the HC-SR04 TRIG pin at a rate of 25 Hz, giving a sample rate of 25 Hz before averaging.
 ```c
+/*-----------------------------------------------------------*/
+/**
+  * @brief Sends trigger signal to HC-SR04 at 25 Hz
+  * @param  None
+  * @retval None
+  */
 void TIMER1_IRQHandler(void) {
 	/* Reset overflow flag */
 	TIMER_IntClear(TIMER1, TIMER_IF_OF);
@@ -45,11 +51,17 @@ void TIMER1_IRQHandler(void) {
 		/* Set overflow value to call timer at 25Hz */ 
 		TIMER_TopSet(TIMER1, CMU_ClockFreqGet(cmuClock_HFPER)/TRIGGER_CALL_FREQ);
 	}
-}
-```
+}```
 
 The *SYSTICK* IRQ increments a counter variable every 10 us, which is used for th Tof measurement. This IRQ is triggered on both edges of the *ECHO* pin. If the pin is high, the function resets the *SYSTICK* counter, and when the pin is low, the counter is indicative of ToF. This IRQ performs 5 point averaging when 5 samples are acquired, reducing the overall sampling rate of the system to 5 Hz. This IRQ also detects a charge event, when the device is plugged into USB, which triggers another IRQ to indicate charging through haptic feedback and stops operation. The PWM signal is calculated as a percentage of the current average distance and the maximum detection range set by pushing the button.
 ```c
+/*-----------------------------------------------------------*/
+/**
+  * @brief Captures 'time-of-flight' and detect if charging
+  * to triffer charge detection
+  * @param  None
+  * @retval None
+  */
 void GPIO_EVEN_IRQHandler(void) {
 	/* If echo high start timer */
 	if (GPIO_PinInGet(ECHO_PORT, ECHO_PIN) == 1) {
@@ -70,7 +82,7 @@ void GPIO_EVEN_IRQHandler(void) {
 			PWM = 0;
 		}
 	}
-	
+
 	/* Detect of charging from USB */
 	if (GPIO_PinInGet(CHARGE_PORT, CHARGE_PIN) == 1) {
 		Charging = 1;
@@ -82,11 +94,17 @@ void GPIO_EVEN_IRQHandler(void) {
 	}
 	GPIO_IntClear(1 << ECHO_PIN);
 	GPIO_IntClear(1 << CHARGE_PIN);
-}
-```
+}```
 
 This IRQ has three functions: drive the PWM output to the op amp and motor, perform counting to debounce the button used for range switching and perform haptic feedback on a charge event. Motor PWM is achieved by using a counter which is incremented on each call of the IRQ. Button debounce is achieved in a similar manner. 
 ```c
+/*-----------------------------------------------------------*/
+/**
+  * @brief PWM output to drive motor, performs button debounce
+  * performs charge indication by haptic feedback
+  * @param  None
+  * @retval None
+  */
 void TIMER0_IRQHandler(void) {
 	TIMER_IntClear(TIMER0, TIMER_IF_OF);
 	PWMTime++;
@@ -133,11 +151,16 @@ void TIMER0_IRQHandler(void) {
 			PWM = 0;
 		}
 	}
-}
-```
+}```
 
 This IRQ exclusively checks for a button push event and switches the range between 100, 200 and 400 cm. This range is used in previous IRQs to scale the vibration intensity with currently sensed distance.
 ```c
+/*-----------------------------------------------------------*/
+/**
+  * @brief Switches between 100, 200 and 400 cm when button pressed
+  * @param  None
+  * @retval None
+  */
 void GPIO_ODD_IRQHandler(void) {
 	/* Button check for button pressed and perform debounce */
 	if ((GPIO_PinInGet(BUTTON_PORT, BUTTON_PIN) == 1) && Button_Enable && !Prev_State && !Charging){
@@ -167,8 +190,7 @@ void GPIO_ODD_IRQHandler(void) {
 		Prev_State = 0;
 	}
 	GPIO_IntClear(1 << BUTTON_PIN);
-}
-```
+}```
 
 # Case
 
