@@ -51,7 +51,8 @@ void TIMER1_IRQHandler(void) {
 		/* Set overflow value to call timer at 25Hz */ 
 		TIMER_TopSet(TIMER1, CMU_ClockFreqGet(cmuClock_HFPER)/TRIGGER_CALL_FREQ);
 	}
-}```
+}
+```
 
 The *SYSTICK* IRQ increments a counter variable every 10 us, which is used for th Tof measurement. This IRQ is triggered on both edges of the *ECHO* pin. If the pin is high, the function resets the *SYSTICK* counter, and when the pin is low, the counter is indicative of ToF. This IRQ performs 5 point averaging when 5 samples are acquired, reducing the overall sampling rate of the system to 5 Hz. This IRQ also detects a charge event, when the device is plugged into USB, which triggers another IRQ to indicate charging through haptic feedback and stops operation. The PWM signal is calculated as a percentage of the current average distance and the maximum detection range set by pushing the button.
 ```c
@@ -94,7 +95,8 @@ void GPIO_EVEN_IRQHandler(void) {
 	}
 	GPIO_IntClear(1 << ECHO_PIN);
 	GPIO_IntClear(1 << CHARGE_PIN);
-}```
+}
+```
 
 This IRQ has three functions: drive the PWM output to the op amp and motor, perform counting to debounce the button used for range switching and perform haptic feedback on a charge event. Motor PWM is achieved by using a counter which is incremented on each call of the IRQ. Button debounce is achieved in a similar manner. 
 ```c
@@ -151,7 +153,8 @@ void TIMER0_IRQHandler(void) {
 			PWM = 0;
 		}
 	}
-}```
+}
+```
 
 This IRQ exclusively checks for a button push event and switches the range between 100, 200 and 400 cm. This range is used in previous IRQs to scale the vibration intensity with currently sensed distance.
 ```c
@@ -190,7 +193,8 @@ void GPIO_ODD_IRQHandler(void) {
 		Prev_State = 0;
 	}
 	GPIO_IntClear(1 << BUTTON_PIN);
-}```
+}
+```
 
 # Case
 
