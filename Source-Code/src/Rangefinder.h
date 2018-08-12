@@ -1,22 +1,26 @@
 /**************************************************************************//**
- * @file
- * @brief Rangefinder main module
- * @author Ian Glass
- * @version 3.20.2
- ******************************************************************************
- * @section License
- * <b>(C) Copyright 2014 Silicon Labs, http://www.silabs.com</b>
- *******************************************************************************
- *
- * This file is licensed under the Silicon Labs Software License Agreement. See 
- * "http://developer.silabs.com/legal/version/v11/Silicon_Labs_Software_License_Agreement.txt"  
- * for details. Before using this software for any purpose, you must agree to the 
- * terms of that agreement.
- *
- ******************************************************************************/
+* @file Rangefinder.c
+* @brief Rangefinder main module
+* @author Ian Glass
+* @version 3.20.2
+* @date    28-July-2018
+* @brief   Main module for the 
+*******************************************************************************
+*
+* THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+* AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+* IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+* DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+* FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+* DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+* SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+* CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+* OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+* OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*
+*******************************************************************************/
 
-//
-//
+/* Defines -------------------------------------------------------------------*/
 #ifndef TRIG_PIN
 #define TRIG_PIN     3
 #endif
@@ -47,10 +51,7 @@
 #ifndef CHARGE_PORT
 #define CHARGE_PORT    gpioPortA
 #endif
-//
-//
 
-//
 //Optimal without signal cross-over
 #define TRIGGER_CALL_FREQ 25
 //Set to 40us high time
@@ -61,8 +62,7 @@
 #define SYS_FREQ 10000
 //Frequency for range indicator (set to 2 Hz atm)
 #define RANGE_FREQ 200
-//
-//
+
 
 
 
