@@ -1,6 +1,5 @@
 /**************************************************************************//**
 * @file Rangefinder.c
-* @brief Rangefinder main module
 * @author Ian Glass
 * @version 3.20.2
 * @date    28-July-2018
